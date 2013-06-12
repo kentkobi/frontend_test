@@ -1,0 +1,133 @@
+.content-off{
+	display:none;
+}
+
+.tab-preset-b{
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 3px 5px rgba(0,0,0, 0.8);
+}
+.tab-preset-b .content-on{
+	padding: 25px;
+	color: #262626;
+}
+.tab-preset-b .content-on h3{
+	display: none;
+}
+.tab-preset-b ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 5px 5px 0 0;  
+}
+.tab-preset-b ul {
+	background: rgb(71,75,76); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ3NGI0YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iIzQ2NGI0YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MjQ2NDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, rgba(71,75,76,1) 0%, rgba(70,75,75,1) 30%, rgba(66,70,73,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(71,75,76,1)), color-stop(30%,rgba(70,75,75,1)), color-stop(100%,rgba(66,70,73,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(71,75,76,1) 0%,rgba(70,75,75,1) 30%,rgba(66,70,73,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(71,75,76,1) 0%,rgba(70,75,75,1) 30%,rgba(66,70,73,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(71,75,76,1) 0%,rgba(70,75,75,1) 30%,rgba(66,70,73,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(71,75,76,1) 0%,rgba(70,75,75,1) 30%,rgba(66,70,73,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#474b4c', endColorstr='#424649',GradientType=0 ); /* IE6-8 */
+	box-shadow: inset 1px 1px 1px #393a3c;
+}
+.tab-preset-b ul > li {
+	display: inline-block;
+	
+}
+.tab-preset-b  ul > li .tab-on {
+	cursor: default;
+	background-color: #ffffff;
+	color: #555555;
+	border-bottom-color: transparent;
+	margin-top: -3px;
+	text-shadow: 1px 1px 1px #cccccc;
+	border-right: 0px solid #383c3f;
+	border-left: 0px solid #4e5254;
+}
+.tab-preset-b ul > li > a {
+	color: #fff;
+	padding: 15px 25px;
+	line-height: 20px;
+	font-weight: bold;
+	font-family: Arial,sans-serif;
+	text-shadow: 1px 1px 1px #000;
+	border-right: 1px solid #383c3f;
+	border-left: 2px solid #4e5254;
+}
+.tab-preset-b ul > li > a {
+display: block;
+}
+
+.content-on, .content-off{
+    position: relative;
+    height: 266px;
+}
+.content-on .caption, .content-off .caption{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 176px;
+    padding: 0 15px;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+}
+.content-on .caption h4{
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 -15px;
+    padding: 15px 15px 15px 11px;
+    border-left: 4px solid #dc291e;
+}
+.tab-preset-a {
+	position: relative;
+	height: 266px;
+	background: #000;
+}
+.tab-preset-a ul {
+    list-style: none outside none;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    bottom: -25px;
+    padding: 0;
+    width: 100%;  
+}
+.tab-preset-a li:first-child {
+    margin-left: 0;
+}
+.tab-preset-a li {
+    display: inline-block;
+    height: 12px;
+    margin-left: 8px;
+    width: 12px;
+}
+.tab-preset-a a {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 50% 50% 50% 50%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 12px;
+    position: relative;
+}
+.tab-preset-a a.tab-on {
+	background-color: transparent;
+	border: 1px solid #fff;
+    height: 11px;
+    width: 11px;
+}
+.tab-preset-a .content-off{
+    opacity:0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.tab-preset-a .content-on{
+    opacity:1;
+    -webkit-transition: all 1s;
+}

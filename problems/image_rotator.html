@@ -3,15 +3,14 @@
 <head>
 	<title>Frontend Coding Test</title>
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../css/tabs.css" />
 	<style type="text/css">
 		#rotator {
 			width: 450px;
 			height: 300px;
-			border: 1px solid black;
-			background: #aaa;
-			text-align: center;
 		}
 	</style>
+	<script type="text/javascript" src="../js/tabs.js"></script>
 </head>
 <body>
 	<div id="headwrap">
@@ -51,9 +50,42 @@
 	<hr/>
 
 	<div id="rotator">
-		Rotator Here
+		<div id="tab-image" class="tab-preset-a">
+			<ul class="tab-nav">
+				<li><a href="#image-1">image 1</a></li>
+				<li><a href="#image-2">image 2</a></li>
+				<li><a href="#image-3">image 3</a></li>
+			</ul>
+			<div id="image-1" class="tab-pane">
+				<div class="caption">
+					<h4>Katarina</h4>
+					<p>Fruitcake bonbon donut jelly-o brownie biscuit marzipan pie.</p>
+				</div>
+				<img src="../img/kat_1.jpg" />
+			</div>
+			<div id="image-2" class="tab-pane">
+				<div class="caption">
+					<h4>Red Card Katarina</h4>
+					<p>Cheesecake marzipan cupcake biscuit candy canes pudding.</p>
+				</div>
+				<img src="../img/kat_2.jpg" />
+			</div>
+			<div id="image-3" class="tab-pane">
+				<div class="caption">
+					<h4>High Command Katarina</h4>
+					<p>Oat cake macaroon souffle cupcake chupa chups chocolate bar bear claw dragee lemon drops.</p>
+				</div>
+				<img src="../img/kat_4.jpg" />
+			</div>
+		</div>
 	</div>
 </div>
 
+<script>
+	var tabImage = new Tabs({
+		id: 'tab-image',
+		auto: true 
+	}).setup().init();
+</script>
 </body>
 </html>
