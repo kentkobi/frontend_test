@@ -1,0 +1,326 @@
+<html>
+<head>
+	<style>
+		@-moz-keyframes rotate-head {
+			0% { -moz-transform: rotate(0deg) }
+			25% { -moz-transform: rotate(-2deg)}
+			50% { -moz-transform: rotate(0deg)}
+			75% { -moz-transform: rotate(2deg)}
+			100% { -moz-transform: rotate(0deg)}
+			
+			0% {-moz-transform: translate(0,0);}
+			50% {-moz-transform: translate(0,2px);}
+			100% {-moz-transform: translate(0,0);}
+		}
+		@-moz-keyframes rotate-torso {
+			0% {-moz-transform: translate(0,0);}
+			50% {-moz-transform: translate(0,6px);}
+			100% {-moz-transform: translate(0,0);}
+		}
+		@-moz-keyframes rotate-front-arm {
+			0% {-moz-transform: translate(0,0);}
+			50% {-moz-transform: translate(0,-3px);}
+			100% {-moz-transform: translate(0,0);}
+			
+			0% { -moz-transform: rotate(0deg) }
+			25% { -moz-transform: rotate(-5deg)}
+			50% { -moz-transform: rotate(0deg)}
+			75% { -moz-transform: rotate(5deg)}
+			100% { -moz-transform: rotate(0deg)}
+		}
+		@-moz-keyframes rotate-front-leg {
+			0% {-moz-transform: translate(0,0);}
+			50% {-moz-transform: translate(0,-6px);}
+			100% {-moz-transform: translate(0,0);}
+		}
+		@-moz-keyframes swing-front-leg {
+			0%   { -moz-transform: rotate(40deg); }
+		    50%  { -moz-transform: rotate(-40deg); }
+		    100% { -moz-transform: rotate(40deg); }
+		 }
+		 @-moz-keyframes swing-back-leg {
+		    0%   { -moz-transform: rotate(-40deg); }
+		    50%  { -moz-transform: rotate(40deg); }
+		    100% { -moz-transform: rotate(-40deg); }
+		}
+		@-moz-keyframes swing-front-arm {
+		    0%   { -moz-transform: rotate(-30deg); }
+		    50%  { -moz-transform: rotate(30deg); }
+		    100% { -moz-transform: rotate(-30deg); }
+		}
+		
+		@-webkit-keyframes rotate-head {
+			0% { -webkit-transform: rotate(0deg) }
+			25% { -webkit-transform: rotate(-2deg)}
+			50% { -webkit-transform: rotate(0deg)}
+			75% { -webkit-transform: rotate(2deg)}
+			100% { -webkit-transform: rotate(0deg)}
+			
+			0% {-webkit-transform: translate(0,0);}
+			50% {-webkit-transform: translate(0,2px);}
+			100% {-webkit-transform: translate(0,0);}
+		}
+		@-webkit-keyframes rotate-torso {
+			0% {-webkit-transform: translate(0,0);}
+			50% {-webkit-transform: translate(0,6px);}
+			100% {-webkit-transform: translate(0,0);}
+		}
+		@-webkit-keyframes rotate-front-arm {
+			0% {-webkit-transform: translate(0,0);}
+			50% {-webkit-transform: translate(0,-3px);}
+			100% {-webkit-transform: translate(0,0);}
+			
+			0% { -webkit-transform: rotate(0deg) }
+			25% { -webkit-transform: rotate(-5deg)}
+			50% { -webkit-transform: rotate(0deg)}
+			75% { -webkit-transform: rotate(5deg)}
+			100% { -webkit-transform: rotate(0deg)}
+		}
+		@-webkit-keyframes rotate-front-leg {
+			0% {-webkit-transform: translate(0,0);}
+			50% {-webkit-transform: translate(0,-6px);}
+			100% {-webkit-transform: translate(0,0);}
+		}
+		@-webkit-keyframes swing-front-leg {
+			0%   { -webkit-transform: rotate(40deg); }
+		    50%  { -webkit-transform: rotate(-40deg); }
+		    100% { -webkit-transform: rotate(40deg); }
+		 }
+		 @-webkit-keyframes swing-back-leg {
+		    0%   { -webkit-transform: rotate(-40deg); }
+		    50%  { -webkit-transform: rotate(40deg); }
+		    100% { -webkit-transform: rotate(-40deg); }
+		}
+		@-webkit-keyframes swing-front-arm {
+		    0%   { -webkit-transform: rotate(-30deg); }
+		    50%  { -webkit-transform: rotate(30deg); }
+		    100% { -webkit-transform: rotate(-30deg); }
+		}
+		
+		
+		
+		.human {
+			position: relative;
+			margin-top: 160px;
+		}
+		.human .head{
+			-moz-animation-duration: 4s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-name: rotate-head;
+		    -moz-animation-timing-function: linear;
+		    -moz-transform-origin: 50% 50%;
+		    
+		    -webkit-animation-duration: 4s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-name: rotate-head;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-transform-origin: 50% 50%;
+		    
+		    background: url("tony.png") no-repeat scroll -73px 0 transparent;
+		    display: block;
+		    height: 138px;
+		    left: -2px;
+		    position: absolute;
+		    top: -96px;
+		    width: 118px;
+		}
+		.human .torso{
+			-moz-animation-duration: 4s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-name: rotate-torso;
+		    -moz-animation-timing-function: linear;
+		    
+		    -webkit-animation-duration: 4s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-name: rotate-torso;
+		    -webkit-animation-timing-function: linear;
+		    
+		    background: url("tony.png") no-repeat scroll -75px -143px transparent;
+		    display: block;
+		    height: 114px;
+		    left: 20px;
+		    position: relative;
+		    width: 109px;
+		}
+		.human .chest{
+		    background: url("tony.png") no-repeat scroll -75px -143px transparent;
+		    display: block;
+		    height: 114px;
+		    position: relative;
+		    top: -77px;
+		    width: 109px;
+		    z-index: -1;
+		}
+		.human .front-arm{
+			-moz-animation-duration: 5s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-name: rotate-front-arm;
+		    -moz-animation-timing-function: linear;
+		    -moz-transform-origin: 50% 0;
+		    
+		    -webkit-animation-duration: 5s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-name: rotate-front-arm;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-transform-origin: 50% 0;
+		    
+		    background: url("tony.png") no-repeat scroll -6px -156px transparent;
+		    display: block;
+		    height: 78px;
+		    left: -8px;
+		    margin-top: 5px;
+		    position: relative;
+		    top: 35px;
+		    width: 45px;
+		}
+		div.human .front-leg {
+		    z-index: -2;
+		}
+		div.human .back-leg {
+		    z-index: -3;
+		}
+		.human .front-leg{
+			-moz-animation-duration: 4s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-name: rotate-front-leg;
+		    -moz-animation-timing-function: linear;
+		    
+		    -webkit-animation-duration: 4s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-name: rotate-front-leg;
+		    -webkit-animation-timing-function: linear;
+		    
+		    background: url("tony.png") no-repeat scroll -64px -263px transparent;
+		    bottom: -37px;
+		    display: block;
+		    height: 54px;
+		    left: 18px;
+		    position: absolute;
+		    width: 54px
+		}
+		.human .back-leg{
+			-moz-animation-duration: 4s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-name: rotate-front-leg;
+		    -moz-animation-timing-function: linear;
+		    
+		    -webkit-animation-duration: 4s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-name: rotate-front-leg;
+		    -webkit-animation-timing-function: linear;
+		    
+		    background: url("tony.png") no-repeat scroll -139px -263px transparent;
+		    bottom: -37px;
+		    display: block;
+		    height: 54px;
+		    left: 44px;
+		    position: absolute;
+		    width: 54px
+		}
+	
+		.human.walking .front-arm{
+		    -moz-animation-duration: 2s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-name: swing-front-arm;
+		    -moz-animation-timing-function: linear;
+		    -moz-transform-origin: 50% 0;
+		    
+		    -webkit-animation-duration: 2s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-name: swing-front-arm;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-transform-origin: 50% 0;
+		}	
+		.human.walking .front-leg{
+			-moz-animation-duration: 2s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-name: swing-front-leg;
+		    -moz-animation-timing-function: linear;
+		    -moz-transform-origin: 50% 0;
+		    
+		    -webkit-animation-duration: 2s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-name: swing-front-leg;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-transform-origin: 50% 0;
+		}
+		
+		.human.walking .back-leg{
+			-moz-animation-duration: 2s;
+		    -moz-animation-iteration-count: infinite;
+		    -moz-animation-name: swing-back-leg;
+		    -moz-animation-timing-function: linear;
+		    -moz-transform-origin: 50% 0;
+		    
+		    -webkit-animation-duration: 2s;
+		    -webkit-animation-iteration-count: infinite;
+		    -webkit-animation-name: swing-back-leg;
+		    -webkit-animation-timing-function: linear;
+		    -webkit-transform-origin: 50% 0;
+		}
+		.human.walking .torso{
+			-moz-animation-duration: 1s;
+			-moz-animation-timing-function: easing;
+			 
+			-webkit-animation-duration: 1s;
+			-webkit-animation-timing-function: easing;
+		}
+		
+		
+		/*for shits and giggles, here's some snow*/
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+
+body {
+	background-color: #fff;
+}
+</style>
+</head>
+<body>
+<p>proof of concept work for an HTML5 game I'm creating...</p>
+
+<table>
+<tr>
+    <th colspan="2"><h2>Human Character</h2></th>
+</tr>
+<tr>
+	<td style="width: 150px;">
+		<h3 style="text-align: center;">Idle state</h3>
+		<div class="human idle">
+			<div class="torso">
+				<div class="head"></div>
+				<div class="front-arm"></div>
+				<div class="chest"></div>
+				<div class="front-leg"></div>
+				<div class="back-arm"></div>
+				<div class="back-leg"></div>
+			</div>
+		</div>
+	</td>
+	<td style="width: 150px;">
+		<h3 style="text-align: center;">Walking state</h3>
+		<div class="human walking">
+			<div class="torso">
+				<div class="head"></div>
+				<div class="front-arm"></div>
+				<div class="chest"></div>
+				<div class="front-leg"></div>
+				<div class="back-arm"></div>
+				<div class="back-leg"></div>
+			</div>
+		</div>
+	</td>
+</tr>
+</table>
+
+
+</body>
+</html>
