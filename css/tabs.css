@@ -1,5 +1,6 @@
-.content-off{
+.tab-preset-b .content-off{
 	display:none;
+
 }
 
 .tab-preset-b{
@@ -64,7 +65,7 @@ display: block;
 
 .content-on, .content-off{
     position: relative;
-    height: 266px;
+    
 }
 .content-on .caption, .content-off .caption{
     position: absolute;
@@ -78,8 +79,7 @@ display: block;
 .content-on .caption h4{
     background-color: rgba(0,0,0,0.5);
     margin: 0 -15px;
-    padding: 15px 15px 15px 11px;
-    border-left: 4px solid #dc291e;
+    padding: 15px 15px 15px 15px;
 }
 .tab-preset-a {
 	position: relative;
@@ -122,12 +122,21 @@ display: block;
     height: 11px;
     width: 11px;
 }
+.tab-preset-a .content-off,.tab-preset-a .content-on{
+    height: 266px;
+    position: absolute;
+    top: 0;
+}
 .tab-preset-a .content-off{
     opacity:0;
     -webkit-transition: all 1s;
     transition: all 1s;
 }
+.tab-preset-a .content-off .caption {
+    display: none;
+}
 .tab-preset-a .content-on{
     opacity:1;
     -webkit-transition: all 1s;
+    transition: all 1s;
 }
