@@ -23,7 +23,8 @@ function Tabs() {
 
 		for(i=0; i < self.tabs.length; i++) {
 			(function(index){
-		        self.tabs[i].onclick = function(){ 
+		        self.tabs[i].onclick = function(e){ 
+		        	e.preventDefault();
 		        	self.auto = false;
 		        	self.select(index);
 		        } 
