@@ -13,7 +13,7 @@ function Tabs() {
 	/* get handle(s) and set options */
 	this.setup = function() {
 		this.container = document.getElementById(this.id);
-		this.tabs = this.container.getElementsByTagName("a");
+		this.tabs = this.container.querySelectorAll(".tab-nav a");
 		return this;
 	};
 

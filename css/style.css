@@ -62,3 +62,11 @@ h1 {
 span.red {
 	color: #DC291E;
 }
+
+/* helper classes to bump (namely header) elements around for ad-hoc visual alignment */
+.top{
+	margin-top: 0;
+}
+.bottom{
+	margin-bottom: 0;
+}

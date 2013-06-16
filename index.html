@@ -1,8 +1,14 @@
 <!doctype html>
-<html>
+<!--[if IE]><![endif]-->
+<!--[if IE 7 ]><html lang="en" class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
 	<title>Frontend Coding Test</title>
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="css/tabs.css" />
+	<script type="text/javascript" src="js/tabs.js"></script>
 </head>
 <body>
 	<div id="headwrap">
@@ -26,34 +32,55 @@
 		<p>
 			Have fun, show off, and please give us feedback so we can make this better!
 		</p>
-		<ul>
-			<li><a href="problems/image_rotator.html">Image Rotator</a>
-				<p>shares same code from tabbed content (same mechanics, just different styling)</p>
-			</li>
-			<li><a href="problems/text_search.html">Text Search</a>
-				<p>basic, but does the job</p>
-			</li>
-			<li>
-				<a href="problems/tabbed_content.html">Tabbed content</a>
-				<p>ended up pairing back the styling for this.  Kept it clean, and let the content be the hero</p>
-			</li>
-			<li>
-				<a href="bonus-credit/sample.html">BONUS: CSS character</a>
-				<p>A small snippet of a css3 proof-of-concept for (skeletal) animation of a game character</p>
-			</li>
-			<li>
-				<a href="https://www.dropbox.com/s/xdzkmv15dposguf/good-dog-whiskey-ending1.pdf">BONUS: pdf version of my comic</a>
-				<p>unrelated? probably, but I'm still proud (in a artsy/nerdy way) :)</p>
-			</li>
-			<li>
-				<a href="http://kentkobi.com/zombies/">BONUS: (rough) proof-of-concept for game idea</a>
-				<p>for fun: playing around with a game idea (chrome or Firefox only).  click zomibies to shoot at them.  click hero, then click tile to move.  Performance is a dog.  Explores things like line-of-sight, pathfinding, tracking, orientation, animation, etc.</p>
-			</li>
-			<li>
-				<a href="https://github.com/kentkobi/sponge">BONUS: github repo of html5 game experiment</a>
-				<p>for fun: another game idea with turn-based concept in mind (chrome or Firefox only).  This one is a not even a demo, more of a brain-dump.  However, a peek at the code can show how I was approaching the concept!  Only fellow front-end developers will find this even remotely interesting :)</p>
-			</li>
-		</ul>
+		<br />
+
+		<div id="bonus-material" class="tabs tab-preset-b">
+			<ul class="tab-nav">
+				<li><a href="#tab-1">The Test</a></li><li><a href="#tab-2">Animation</a></li><li><a href="#tab-3">Comic</a></li><li><a href="#tab-4">Zombies</a></li><li><a href="#tab-5">My Braaaiiin!</a></li>
+			</ul>
+			<div id="tab-1" class="tab-pane">
+				<p>I took a balanced approach: kept it clean, maintanable, and usable.  The Tabs and Image Rotator are actually the same code (just styled differently).  The door is open for future customizations :)</p>
+				<ul>
+					<li><a href="problems/image_rotator.html">Image Rotator</a></li>
+					<li><a href="problems/text_search.html">Text Search</a></li>
+					<li><a href="problems/tabbed_content.html">Tabbed content</a></li>
+				</ul>
+			</div>
+			<div id="tab-2" class="tab-pane">
+				<h4 class="top">CSS3 Character Animation</h4>
+				<p>A small snippet of a proof-of-concept for (skeletal) animation of a game character.</p>
+				<p>My first instinct was sprite animation, but wanted to test the waters with CSS3 animation.  Was great fun! And is great IF the style of the game can match the limitations of the animation (no dynamic movement).</p>
+				<a href="bonus-credit/sample.html">HAVE A PEEK</a>
+				<small>(chrome or Firefox only)</small>
+			</div>
+			<div id="tab-3" class="tab-pane">
+				<h4 class="top">Do You Like Comics?</h4>
+				<p>A little left-field, but I'm hoping you are a company that likes that!  This was a comic I did as a personal project - and I'm very proud of it.  I'm a massive fan of black &amp; white comics, and wanted to try something outside of my comfort zone.</p>
+				<a href="https://www.dropbox.com/s/xdzkmv15dposguf/good-dog-whiskey-ending1.pdf">HAVE A READ</a>
+			</div>
+			<div id="tab-4" class="tab-pane">
+				<h4 class="top">Zombies!</h4>
+				<p>This was a proof-of-concept after someone had asked me "can you make me a game?".  I loved the idea of trying!  Now performance is a dog, and it is very rough, but it explores things like line-of-sight, pathfinding, tracking, orientation, acheivements, animation, etc.</p>
+
+				<a href="http://kentkobi.com/zombies/">HAVE A PLAY!</a>
+				<p>click zombies to shoot at them.  To move, click hero, then click destination tile.</p>
+				<small>(chrome or Firefox only)</small>
+			</div>
+			<div id="tab-5" class="tab-pane">
+				<h4 class="top">DOM Game Experiment</h4>
+				<p>A game idea with a turn-based concept in mind (I'm an X-COM fan)</p>
+				<p>Unfortunately this one is a not even a playable demo, more of a code brain-dump.  I included it though to share with fellow front-end developers -  have a peek at the code to see how I was approaching the concept!  For everyone else ... nothing to see here.</p>
+				<p>Please be gentle, this is the equivalent to a sketch book :)</p>
+				<a href="https://github.com/kentkobi/sponge">EXPLORE GITHUB REPO</a>
+				<p><small>useless fact: impact.js is a cool engine if you are serious about creating an html5 game</small></p>
+			</div>
+		</div>
 	</div>
+	<script>
+		var tabContent = new Tabs({
+			id: 'bonus-material',
+			auto: false 
+		}).setup().init();
+	</script>
 </body>
 </html>

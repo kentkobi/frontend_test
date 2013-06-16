@@ -1,5 +1,9 @@
 <!doctype html>
-<html>
+<!--[if IE]><![endif]-->
+<!--[if IE 7 ]><html lang="en" class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
 	<title>Frontend Coding Test</title>
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
@@ -14,78 +18,78 @@
 </head>
 <body>
 	<div id="headwrap">
-	<div class="head">
-		<div class="logo">Riot Games</div>
+		<div class="head">
+			<div class="logo">Riot Games</div>
+		</div>
 	</div>
-</div>
 
-<div id="content">
-	<h1><span class="red">Image</span> Rotator</h1>
+	<div id="content">
+		<h1><span class="red">Image</span> Rotator</h1>
 
-	<p>
-		Using the below images, make a rotator in the box below that shows only one of the Katarina skins every 3 seconds.  The rotator should also display the correct image title and description with each image change.
-	</p>
-	<p>
-		It would be really awesome if the slides animated between one another!
-	</p>
+		<p>
+			Using the below images, make a rotator in the box below that shows only one of the Katarina skins every 3 seconds.  The rotator should also display the correct image title and description with each image change.
+		</p>
+		<p>
+			It would be really awesome if the slides animated between one another!
+		</p>
 
-	<hr />
+		<hr />
 
-	<h4>Katarina</h4>
-	<p>Fruitcake bonbon donut jelly-o brownie biscuit marzipan pie.</p>
-	<img src="../img/kat_1.jpg" /><br/>
+		<h4>Katarina</h4>
+		<p>Fruitcake bonbon donut jelly-o brownie biscuit marzipan pie.</p>
+		<img src="../img/kat_1.jpg" /><br/>
 
-	<h4>Red Card Katarina</h4>
-	<p>Cheesecake marzipan cupcake biscuit candy canes pudding.</p>
-	<img src="../img/kat_2.jpg" /><br/>
+		<h4>Red Card Katarina</h4>
+		<p>Cheesecake marzipan cupcake biscuit candy canes pudding.</p>
+		<img src="../img/kat_2.jpg" /><br/>
 
-	<h4>Kitty Cat Katarina</h4>
-	<p>Applicake topping halvah lemon drops wypas cotton candy.</p>
-	<img src="../img/kat_3.jpg" /><br/>
+		<h4>Kitty Cat Katarina</h4>
+		<p>Applicake topping halvah lemon drops wypas cotton candy.</p>
+		<img src="../img/kat_3.jpg" /><br/>
 
-	<h4>High Command Katarina</h4>
-	<p>Oat cake macaroon souffle cupcake chupa chups chocolate bar bear claw dragee lemon drops.</p>
-	<img src="../img/kat_4.jpg" /><br/>
+		<h4>High Command Katarina</h4>
+		<p>Oat cake macaroon souffle cupcake chupa chups chocolate bar bear claw dragee lemon drops.</p>
+		<img src="../img/kat_4.jpg" /><br/>
 
-	<hr/>
+		<hr/>
 
-	<div id="rotator">
-		<div id="tab-image" class="tab-preset-a">
-			<ul class="tab-nav">
-				<li><a href="#image-1">image 1</a></li>
-				<li><a href="#image-2">image 2</a></li>
-				<li><a href="#image-3">image 3</a></li>
-			</ul>
-			<div id="image-1" class="tab-pane">
-				<div class="caption">
-					<h4>Katarina</h4>
-					<p>Fruitcake bonbon donut jelly-o brownie biscuit marzipan pie.</p>
+		<div id="rotator">
+			<div id="tab-image" class="tabs tab-preset-a">
+				<ul class="tab-nav">
+					<li><a href="#image-1">image 1</a></li>
+					<li><a href="#image-2">image 2</a></li>
+					<li><a href="#image-3">image 3</a></li>
+				</ul>
+				<div id="image-1" class="tab-pane">
+					<div class="caption">
+						<h4>Katarina</h4>
+						<p>Fruitcake bonbon donut jelly-o brownie biscuit marzipan pie.</p>
+					</div>
+					<img src="../img/kat_1.jpg" />
 				</div>
-				<img src="../img/kat_1.jpg" />
-			</div>
-			<div id="image-2" class="tab-pane">
-				<div class="caption">
-					<h4>Red Card Katarina</h4>
-					<p>Cheesecake marzipan cupcake biscuit candy canes pudding.</p>
+				<div id="image-2" class="tab-pane">
+					<div class="caption">
+						<h4>Red Card Katarina</h4>
+						<p>Cheesecake marzipan cupcake biscuit candy canes pudding.</p>
+					</div>
+					<img src="../img/kat_2.jpg" />
 				</div>
-				<img src="../img/kat_2.jpg" />
-			</div>
-			<div id="image-3" class="tab-pane">
-				<div class="caption">
-					<h4>High Command Katarina</h4>
-					<p>Oat cake macaroon souffle cupcake chupa chups chocolate bar bear claw dragee lemon drops.</p>
+				<div id="image-3" class="tab-pane">
+					<div class="caption">
+						<h4>High Command Katarina</h4>
+						<p>Oat cake macaroon souffle cupcake chupa chups chocolate bar bear claw dragee lemon drops.</p>
+					</div>
+					<img src="../img/kat_4.jpg" />
 				</div>
-				<img src="../img/kat_4.jpg" />
 			</div>
 		</div>
 	</div>
-</div>
 
-<script>
-	var tabImage = new Tabs({
-		id: 'tab-image',
-		auto: true 
-	}).setup().init();
-</script>
+	<script>
+		var tabImage = new Tabs({
+			id: 'tab-image',
+			auto: true 
+		}).setup().init();
+	</script>
 </body>
 </html>

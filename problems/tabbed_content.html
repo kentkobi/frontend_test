@@ -1,5 +1,9 @@
 <!doctype html>
-<html>
+<!--[if IE]><![endif]-->
+<!--[if IE 7 ]><html lang="en" class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
 	<title>Frontend Coding Test</title>
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
@@ -41,7 +45,7 @@
 
 		<hr/>
 
-		<div id="container" class="tab-preset-b">
+		<div id="container" class="tabs tab-preset-b">
 			<ul class="tab-nav">
 				<li><a href="#tab-1">GINGERBREAD</a></li><li><a href="#tab-2">CHOCOLATE</a></li><li><a href="#tab-3">CHEESECAKE</a></li>
 			</ul>
@@ -50,11 +54,17 @@
 				<p>
 				Gingerbread muffin gummies gingerbread macaroon. Lollipop candy applicake toffee faworki. Bear claw topping jelly toffee toffee powder tiramisu candy chupa chups. Chupa chups dragee icing applicake chupa chups dessert. Croissant jelly faworki marzipan tootsie roll marshmallow. Marshmallow toffee sweet roll fruitcake.
 				</p>
+				<p>
+				Chocolate faworki croissant brownie halvah macaroon gummi bears wypas. Chupa chups icing gummies pudding dessert carrot cake. Cupcake jelly beans sweet roll icing ice cream apple pie tootsie roll gummi bears marzipan. Brownie gummies chupa chups pie. Cupcake jujubes topping. 
+				</p>
 			</div>
 			<div id="tab-2" class="tab-pane">
 				<h3>Tab 2</h3>
 				<p>
 				Chocolate faworki croissant brownie halvah macaroon gummi bears wypas. Chupa chups icing gummies pudding dessert carrot cake. Cupcake jelly beans sweet roll icing ice cream apple pie tootsie roll gummi bears marzipan. Brownie gummies chupa chups pie. Cupcake jujubes topping. 
+				</p>
+				<p>
+				Gingerbread muffin gummies gingerbread macaroon. Lollipop candy applicake toffee faworki. Bear claw topping jelly toffee toffee powder tiramisu candy chupa chups. Chupa chups dragee icing applicake chupa chups dessert. Croissant jelly faworki marzipan tootsie roll marshmallow. Marshmallow toffee sweet roll fruitcake.
 				</p>
 			</div>
 			<div id="tab-3" class="tab-pane">
@@ -62,14 +72,17 @@
 				<p>
 				Cheesecake jelly beans ice cream lollipop sweet pastry. Chupa chups dessert cheesecake sesame snaps. Cookie ice cream candy canes pastry cake muffin. Icing chocolate sweet gummi bears powder oat cake oat cake lemon drops.
 				</p>
+				<p>
+				Chocolate faworki croissant brownie halvah macaroon gummi bears wypas. Chupa chups icing gummies pudding dessert carrot cake. Cupcake jelly beans sweet roll icing ice cream apple pie tootsie roll gummi bears marzipan. Brownie gummies chupa chups pie. Cupcake jujubes topping. 
+				</p>
 			</div>
 		</div>
 	</div>
 	<script>
-	var tabContent = new Tabs({
-		id: 'container',
-		auto: false 
-	}).setup().init();
-</script>
+		var tabContent = new Tabs({
+			id: 'container',
+			auto: false 
+		}).setup().init();
+	</script>
 </body>
 </html>
